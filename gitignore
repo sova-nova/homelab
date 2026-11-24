@@ -1,0 +1,57 @@
+# Secrets and credentials
+.env
+.env.*
+*.key
+*.pem
+*.p12
+*.pfx
+*.kdbx
+id_rsa*
+id_ed25519*
+credentials*
+secrets*
+
+# Firewall / system config exports (publish only after scrubbing,
+# and rename to e.g. opnsense-config-scrubbed.txt)
+*.xml
+config-*.xml
+
+# Terraform / Ansible
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+!example.tfvars
+crash.log
+*.retry
+vault-password*
+.vault_pass*
+
+# Proxmox backups and VM images
+*.vma
+*.vma.zst
+*.tar.zst
+*.iso
+*.qcow2
+*.vmdk
+*.img
+
+# Packet captures and logs (may contain real addresses or credentials)
+*.pcap
+*.pcapng
+*.log
+
+# Editor, OS, and tooling noise
+.DS_Store
+Thumbs.db
+*.swp
+*~
+.vscode/
+.idea/
+.obsidian/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
